@@ -1,5 +1,5 @@
-import React, {useMemo} from "react";
-import {useHtmlClassService} from "../../_core/MetronicLayout";
+import React, { useMemo } from "react";
+import { useHtmlClassService } from "../../_core/MetronicLayout";
 
 export function Footer() {
   const today = new Date().getFullYear();
@@ -8,7 +8,7 @@ export function Footer() {
   const layoutProps = useMemo(() => {
     return {
       footerClasses: uiService.getClasses("footer", true),
-      footerContainerClasses: uiService.getClasses("footer_container", true)
+      footerContainerClasses: uiService.getClasses("footer_container", true),
     };
   }, [uiService]);
 
@@ -26,38 +26,43 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="nav-link pr-3 pl-0"
+            title="Discord"
           >
-            Discord
+            <i class="fab fa-discord"></i>
           </a>
           <a
             href="https://blog.yup.io/"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-link px-3"
+            title="Blog"
           >
-            Blog
+            <i class="fas fa-blog"></i>
           </a>
           <a
             href="https://docs.yup.io/"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-link pl-3 pr-0"
+            title="Documents"
           >
-            Docs
+            <i class="far fa-folder-open"></i>
           </a>
           <a
             href="https://twitter.com/yup_io"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-link pl-3 pr-0"
+            title="Twitter"
           >
-            Twitter
+            <i class="fab fa-twitter"></i>
           </a>
           <a
             href="https://yup.io/"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-link pl-3 pr-0"
+            title="Yup Homepage"
           >
             Yup.io
           </a>
